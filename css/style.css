@@ -1,0 +1,139 @@
+/*============
+
+--------------------------- Global
+
+===================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: #FCFCFC;
+    font-size: 16px;
+}
+.body-wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex{
+    display: flex;
+}
+.flex-just-cont-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+section h2{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*============
+
+--------------------------- Buttons
+
+===================================================*/
+
+.btn-round{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 24px 2.25rem;
+    background-color:  #7cc576;
+    border-radius: 2rem;
+}
+
+/*============
+
+--------------------------- Fonts
+
+===================================================*/
+
+/* font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+
+
+
+/*============
+
+--------------------------- Header
+
+===================================================*/
+.header-content{
+    padding: 2.6rem 14.3rem;
+}
+
+.branding img{
+    max-width: 8.8rem;
+    max-height: 1.8rem;
+}
+
+header li a{
+    padding: 0.3rem 1rem;
+    color:  #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+header li a:hover{
+    color: #333;
+    border-bottom: #333 2px solid;
+}
+/*============
+
+--------------------------- Section Hero
+
+===================================================*/
+
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(../img/BackgroundHero.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 530px;
+    text-align: center;
+}
+
+.hero-content{
+    color: #fff;
+    height: 100%;
+}
+.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7.4rem 2.5rem 2.5rem;
+}
+.hero p{
+    font-family: 'Roboto Slab', serif; 
+    color:  #cccccc;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+}
+.hero a{
+    padding: 1.5rem 2.25rem;
+    color: #fff;
+    background-color: #7cc576;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*============
+
+--------------------------- Section services
+
+===================================================*/
+
