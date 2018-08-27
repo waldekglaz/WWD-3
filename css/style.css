@@ -293,6 +293,7 @@ header li a:hover{
 .projects-content{
     padding-right: 47.31rem;
     padding-top: 5.37rem;
+    padding-bottom: 6.25rem;
     position: relative;
 }
 
@@ -357,3 +358,68 @@ header li a:hover{
 .box-content p{
     margin-top: -24px;
 }
+/*============
+
+--------------------------- Section Culture
+
+===================================================*/
+
+.culture{
+    background-color: #f9f9f9;
+    padding-bottom: 6.25rem;
+}
+.culture-content{
+    margin-top: 5.5rem;
+    position: relative;
+}
+.culture .card{
+    text-align: center;
+}
+.culture .card i{
+    font-size: 2.93rem;
+    color: #777777;
+    border: solid #777777 4px;
+    border-radius: 50%;
+}
+.culture .card h3{
+    color:  #222222;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.culture .card p{
+    color:  #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    max-width: 17.12rem;
+}
+
+#balance{
+    padding: 15px 19px 15px 13px;
+}
+
+#chart,
+#star{
+    padding: 15px;
+}
+
+#chart-card::after,
+#chart-card::before{
+    content: '';
+    border: solid 1px #777;
+    display: block;
+    width: 170px;
+    position: absolute;
+}
+#chart-card::before{
+    top: 40px;
+    left: 230px;
+}
+
+#chart-card::after{
+    top: 40px;
+    left: 600px;
+}
+
