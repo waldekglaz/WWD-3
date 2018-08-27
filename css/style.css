@@ -3,20 +3,23 @@
 --------------------------- Global
 
 ===================================================*/
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
 body{
     background-color: #FCFCFC;
     font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 .body-wrapper{
     max-width: 1400px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* FLex container */
 .flex{
     display: flex;
 }
@@ -26,11 +29,10 @@ body{
 .align-items-center{
     align-items: center;
 }
-section h2{
-    font-size: 2.5rem;
-    text-align: center;
-    text-transform: uppercase;
+.flex-column{
+    flex-direction: column;
 }
+
 /*============
 
 --------------------------- Buttons
@@ -44,9 +46,17 @@ section h2{
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 24px 2.25rem;
+    padding: 1.4rem 2.25rem;
     background-color:  #7cc576;
     border-radius: 2rem;
+    display: inline-block;
+}
+
+.btn-round:hover,
+.btn-round:focus{
+    background-color: #288122;
+    color: #ccc;
+    transition: 0.7s;
 }
 
 /*============
@@ -68,14 +78,16 @@ font-family: 'Roboto Slab', serif; */
 
 ===================================================*/
 .header-content{
-    padding: 2.6rem 14.3rem;
+    padding: 2.6rem 1rem;
 }
 
 .branding img{
     max-width: 8.8rem;
     max-height: 1.8rem;
 }
-
+header ul{
+    list-style: none;
+}
 header li a{
     padding: 0.3rem 1rem;
     color:  #777777;
@@ -89,6 +101,40 @@ header li a{
 header li a:hover{
     color: #333;
     border-bottom: #333 2px solid;
+}
+/*============
+
+--------------------------- Sections
+
+===================================================*/
+.services,
+.advert,
+.projects,
+.culture,
+.testimonials{
+    padding: 6.25rem 0;
+}
+
+.contact,
+.partners,
+.footer-nav{
+    padding: 4rem 0;
+}
+section h2, section p{
+    text-align: center;
+}
+section h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.sub-title{
+    color: #777;
+    font-size: 1.25rem;
+    font-family: 'Roboto Slab', serif;
+    color:  #cccccc;
+    font-size: 20px;
+    font-weight: 400;
 }
 /*============
 
@@ -108,28 +154,16 @@ header li a:hover{
 .hero-content{
     color: #fff;
     height: 100%;
+    width: 100%;
 }
 .hero h1{
     font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 7.4rem 2.5rem 2.5rem;
+    padding: 7.4rem 2.5rem 0;
 }
 .hero p{
-    font-family: 'Roboto Slab', serif; 
-    color:  #cccccc;
-    font-size: 20px;
-    font-weight: 400;
     margin-bottom: 3.5rem;
-}
-.hero a{
-    padding: 1.5rem 2.25rem;
-    color: #fff;
-    background-color: #7cc576;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 /*============
 
@@ -137,3 +171,22 @@ header li a:hover{
 
 ===================================================*/
 
+.services-content{
+    padding-top: 5.3rem;
+}
+
+.card-services i{
+    font-size: 3.4rem;
+    padding-bottom: 1.3rem;
+}
+.card-services h3{
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-services p{
+    font-size: 0.87rem;
+    font-family: 'Roboto Slab', serif; 
+    font-weight: 400;
+}
