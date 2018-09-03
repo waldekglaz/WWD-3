@@ -9,6 +9,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .body-wrapper{
     max-width: 1400px;
@@ -119,7 +120,7 @@ header li a{
     }
 header li a:hover{
     color: #333;
-    border-bottom: #333 2px solid;
+    border-bottom:#7cc576 2px solid;
 }
 /*============
 
