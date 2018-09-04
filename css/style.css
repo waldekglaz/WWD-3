@@ -21,18 +21,28 @@ body{
     max-width: 1000px;
     margin: 0 auto;
 }
-/* FLex container */
+/*============
+
+--------------------------- Flex
+
+===================================================*/
 .flex{
     display: flex;
 }
 .flex-just-cont-between{
     justify-content: space-between;
 }
+.flex-just-space-around{
+    justify-content: space-around;
+}
 .align-items-center{
     align-items: center;
 }
 .flex-column{
     flex-direction: column;
+}
+.align-items-base{
+    align-items: baseline;
 }
 
 ul{
@@ -83,6 +93,25 @@ ul{
     transition: 1s;
 }
 
+.btn-rect{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+    opacity: 0.8;
+    padding: 0.8rem 1.8125rem;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+}
+
+.btn-rect:hover{
+    opacity: 1;
+}
+
 /*============
 
 --------------------------- Fonts
@@ -103,7 +132,7 @@ font-family: 'Roboto Slab', serif; */
 ===================================================*/
 
 .header-content{
-    padding: 2.6rem 1rem;
+    padding: 2.6rem 14.3rem;
 }
 
 .branding img{
@@ -141,6 +170,10 @@ header li a:hover{
 .partners,
 .footer-nav{
     padding: 4rem 0;
+}
+.services, .culture{
+    padding-left: 14.375rem;
+    padding-right: 14.375rem;
 }
 .sec-title{
     font-size: 2.5rem;
@@ -294,7 +327,8 @@ header li a:hover{
 ===================================================*/
 
 .projects-content{
-    padding-right: 47.31rem;
+    padding-left: 14.375rem;
+    padding-right: 14.375rem;
     padding-top: 5.37rem;
     padding-bottom: 6.25rem;
     position: relative;
@@ -308,41 +342,29 @@ header li a:hover{
     text-align: left;
     text-transform: uppercase;
 }
-.projects-content > p{
-    font-family: RobotoSlab;
-    color:  #777777;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
-    margin-top: -20px;
-}
 .projects img{
     max-width: 40.18rem;
     position: absolute;
     right: 0;
     top: 80px;
+    z-index: -1;
 }
 
 #basket i{
     font-size: 2.5rem;
     padding: 14px 12px;;
-    border: 4px solid #000;
+    border: 3px solid #000;
     border-radius: 50%;
 }
 #seo i,
 #lock i{
     font-size: 2.5rem;
     padding: 12px 14px;
-    border: 4px solid #000;
+    border: 3px solid #000;
     border-radius: 50%;
 }
-
 .projects-list i{
     margin-right: 1.25rem;
-    margin-bottom: 1.25rem;
-}
-.projects .box-content{
-    padding-bottom: 1.25rem;
 }
 .projects-content p{
     font-family: 'Roboto Slab', serif;
@@ -350,6 +372,7 @@ header li a:hover{
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+    max-width: 26.375rem;
 }
 .box-content h4{
     color:  #222222;
@@ -418,11 +441,227 @@ header li a:hover{
 }
 #chart-card::before{
     top: 40px;
-    left: 230px;
+    left: 210px;
 }
 
 #chart-card::after{
     top: 40px;
-    left: 600px;
+    left: 550px;
 }
 
+/*============
+
+--------------------------- Section Testimonials
+
+===================================================*/
+
+.testimonials-wrapper{
+    padding: 5.375rem 14.375rem 0;
+}
+.testimonial{
+    padding-bottom: 3.875rem;
+}
+
+.testimonials img{
+    max-width: 13.81rem;
+    max-height: 13.81rem;
+    border-radius: 50%;
+    display: block;
+}
+
+.testimonial-content{
+    background-color:  #f9f9f9;
+    max-width: 40.1875rem;
+    padding: 2.5rem;
+}
+
+.quote{
+    font-family: 'Roboto Slab', serif;
+    color:  #777777;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+.client{
+    color:  #7cc576;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+.testimonial-1 img{
+    margin-right: 2.625rem;
+}
+.testimonial-2 img{
+    order: 2;
+    margin-left: 2.625rem;
+}
+
+/*============
+
+--------------------------- Section Contact
+
+===================================================*/
+
+.contact{
+    background-color:  #7cc576;
+    color: #fff;
+    text-align: center;
+}
+
+/*============
+
+--------------------------- Section Partners
+
+===================================================*/
+.partners{
+    padding-left: 19.75rem;
+    padding-right: 19.75rem;
+}
+#partners-img__1{
+    max-width: 10.0625rem;
+    max-height: 1.875rem;
+}
+#partners-img__2{
+    max-width: 11.625rem;
+    max-height: 2.625rem;
+}
+#partners-img__3{
+    max-width: 10.0625rem;
+    max-height: 2.5625rem;
+}
+#partners-img__4{
+    max-width: 10.0625rem;
+    max-height: 2.625rem;
+}
+/*============
+
+--------------------------- Section Footer Nav
+
+===================================================*/
+
+.footer-nav{
+    background-color: #222222;
+    color: #fff;
+    padding-left: 14.375rem;
+    padding-right: 14.375rem;
+    text-align: left;
+}
+
+.footer-nav h3{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.contact-us{
+    margin-right: 7.0625rem;
+}
+.contact-us i{
+    margin-right: 17px;
+}
+.fa-map-marker-alt,
+.fa-mobile-alt{
+    font-size: 28px;
+}
+.fa-envelope{
+    font-size: 22px;
+}
+.latest-posts{
+    margin-right: 2.25rem;
+}
+.column ul{
+    margin-left: 0;
+    padding: 0;
+}
+.row, .row a{
+    font-family: 'Roboto Slab', serif;
+    color:  #ececec;
+   font-weight: 400;
+   text-decoration: none;
+}
+.row address{
+    font-style: normal;
+    align-self: flex-start;
+    line-height: 1.6;
+}
+
+.latest-posts i{
+    margin-right: 14px;
+    margin-bottom: 19px;
+}
+
+.fa-id-card,
+.fa-image{
+    font-size: 26px;
+}
+.fa-play{
+    font-size: 24px;
+    padding-right: 8px;
+}
+.tweets{
+    max-width: 17.3125rem;
+}
+.tweet-box{
+    margin-bottom: 17px;
+}
+.tweets p{
+    margin: 0;
+}
+.tweets i{
+    font-size: 22px;
+    margin-right: 22px;
+}
+.hashtag{
+    font-weight: 700;
+    padding-top: 6px;
+}
+.tweet-date{
+    font-size: 12px;
+    padding-top: 8px;
+}
+/*============
+
+--------------------------- Section Footer 
+
+===================================================*/
+footer{
+    padding:1.75rem 0 1.75rem;
+}
+.footer-col-1{
+    color:  #555555;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 14.375rem;
+    margin-right: 7.4375rem;
+}
+footer a{
+    background-color: #222222;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    margin-left: 9px;
+}
+#footer-twitter,
+#footer-google{
+    padding: 14px 16px;
+    border-radius: 40px;
+}
+
+#footer-fb{
+    padding: 14px 20px;
+    border-radius: 40px;
+}
+
+#footer-pin{
+    padding: 14px 18px;
+    border-radius: 40px;
+}
+
+footer a:hover{
+    background-color: #7cc576;
+    transition: 0.8s;
+}

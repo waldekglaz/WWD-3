@@ -132,21 +132,21 @@
                 </div>
             </div>
         </section>
-        <section class="tetimonials">
+        <section class="testimonials">
             <h2 class="sec-title">our awesome clients</h2>
-            <p class="sub-title">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="section-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="testimonials-wrapper">
-                <div class="testimonial testimonial-1">
-                    <img src="" alt="">
+                <div class="testimonial testimonial-1 flex flex-just-cont-between">
+                    <img src="img/male.jpeg" alt="Jamie Richardson">
                     <div class="testimonial-content">
-                        <p class="qoute">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto nesciunt perspiciatis repellat perferendis."</p>
+                        <p class="quote">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto nesciunt perspiciatis repellat perferendis."</p>
                         <p class="client">- Jamie Richardson, Founder of Cocoa Media</p>
                     </div>
                 </div>
-                <div class="testimonial testimonial-2">
-                    <img src="" alt="">
+                <div class="testimonial testimonial-2 flex flex-just-cont-between">
+                    <img src="img/pexels-photo-355164.jpeg" alt="Kim Thompson">
                     <div class="testimonial-content">
-                        <p class="qoute">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto nesciunt perspiciatis repellat perferendis."</p>
+                        <p class="quote">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto nesciunt perspiciatis repellat perferendis."</p>
                         <p class="client">- Kim Thompson, Founder of Rainel</p>
                     </div>
                 </div>
@@ -156,16 +156,16 @@
                 <h2 class="sec-title">ready to talk about your next project?</h2>
                 <a href="" class="btn-rect">contact us</a>
         </section>
-        <section class="partners">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <section class="partners flex flex-just-cont-between align-items-center">
+            <img id="partners-img__1" src="img/Envato.png" alt="Envato">
+            <img id="partners-img__2" src="img/WordPress.png" alt="WordPress">
+            <img id="partners-img__3" src="img/Tuts+.png" alt="aeTus+">
+            <img id="partners-img__4" src="img/Microlancer copy.png" alt="Microlancer">
         </section>
-        <section class="footer-nav">
-            <div class="column">
+        <section class="footer-nav flex flex-just-cont-between">
+            <div class="column contact-us">
                 <h3>contact us</h3>
-                <div class="row">
+                <div class="row flex align-items-base">
                     <i class="fas fa-map-marker-alt"></i>
                     <address>
                     55 Main St.<br/>
@@ -173,28 +173,41 @@
                     M1H 3A5<br/>
                     </address>
                 </div>
-                <div class="row">
+                <div class="row flex align-items-center">
                     <i class="fas fa-mobile-alt"></i>
                     <p>(416)555-5252</p>
                 </div>
-                <div class="row">
+                <div class="row flex align-items-center">
                         <i class="fas fa-envelope"></i>
                     <p>hello@treehouse.com</p>
                 </div>
             </div>
-            <div class="column">
+            <div class="column latest-posts">
                 <h3>Latest posts</h3>
-                <ul>
-                    <li><i class="far fa-id-card"></i>Made with love in toronto</li>
-                    <li><i class="far fa-image"></i>Startup News & Emerging Tech</li>
-                    <li><i class="far fa-id-card"></i>Bitcoin Will Soon Rule The World</li>
-                    <li><i class="far fa-id-card"></i>Wearable Technology on the rise</li>
-                    <li><i class="fas fa-play"></i>Learn web design in 30 days!</li>
-                </ul>
+                <div class="row flex">
+                    <i class="far fa-id-card"></i>
+                    <a href="">Made with love in toronto</a>
+                </div>
+                <div class="row flex">
+                    <i class="far fa-image"></i>
+                    <a href="">Startup News & Emerging Tech</a>
+                </div>
+                <div class="row flex">
+                    <i class="far fa-id-card"></i>
+                    <a href="">Bitcoin Will Soon Rule The World</a>
+                </div>
+                <div class="row flex">
+                    <i class="far fa-id-card"></i>
+                    <a href="">Wearable Technology on the rise</a>
+                </div>
+                <div class="row flex">
+                    <i class="fas fa-play"></i>
+                    <a href="">Learn web design in 30 days!</a>
+                </div>
             </div>
-            <div class="column">
+            <div class="column tweets">
                 <h3>Latest tweets</h3>
-                <div class="row">
+                <div class="row flex align-items-base tweet-box">
                     <i class="fab fa-twitter"></i>
                     <div class="tweet-wrapper">
                         <p class="tweet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit eaque officia.</p>
@@ -202,7 +215,7 @@
                         <p class="tweet-date">8 mins ago</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row flex align-items-base tweet-box">
                     <i class="fab fa-twitter"></i>
                     <div class="tweet-wrapper">
                         <p class="tweet">Grab the Free Treehouse web template at FreebiesXpress!</p>
@@ -212,15 +225,15 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer class="flex align-items-center">
             <div class="footer-col-1">
                 &copy; Copyright 2014 FreebiesXpress.com
             </div>
-            <div class="footer-col-2">
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-pinterest-p"></i></a>
-                <a href=""><i class="fab fa-google"></i></a>
+            <div class="footer-col-2 flex">
+                <a id="footer-twitter" href=""><i class="fab fa-twitter"></i></a>
+                <a id="footer-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                <a id="footer-pin" href=""><i class="fab fa-pinterest-p"></i></a>
+                <a id="footer-google" href=""><i class="fab fa-google"></i></a>
             </div>
         </footer>
     </div>
