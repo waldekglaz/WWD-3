@@ -16,6 +16,7 @@ body{
     max-width: 1400px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1000px;
@@ -235,6 +236,8 @@ header li a:hover{
 
 .services-content{
     padding-top: 5.3rem;
+    display: flex;
+    justify-content: space-between;
 }
 .card-services{
     text-align: center;
@@ -664,4 +667,17 @@ footer a{
 footer a:hover{
     background-color: #7cc576;
     transition: 0.8s;
+}
+
+@media(max-width:1110px){
+    .header-content{
+        padding: 2.6rem 4.3rem;
+    }
+    .services-content{
+        justify-content: space-around;
+    }
+    .services, .culture{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
