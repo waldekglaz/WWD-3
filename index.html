@@ -13,26 +13,39 @@
     <div class="body-wrapper">
         <header>
             <div class="header-content flex flex-just-cont-between align-items-center">
-            <div class="branding"><a href="#"><img src="img/Logo.png" alt=""></a></div>
+            <div class="branding"><a href="index.html"><img src="img/Logo.png" alt="Treehouse Logo"></a></div>
             <nav>
-                <ul class="flex">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <span class="open-slide">
+                            <a href="#" onclick="openSlideMenu()">
+                                    <i class="fas fa-bars"></i>
+                            </a>
+                        </span>
+                <ul class="flex navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#section-services">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#section-portfolio">Portfolio</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="side-nav" id="side-menu">
+                    <a class="btn-close" href="#" onclick="closeSlideMenu()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="#section-services">About</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#section-portfolio">Portfolio</a>
+                    <a href="#section-contact">Contact</a>
+                </div>
         </div>
         </header>
         <section class="hero">
                 <div class="hero-content">
                     <h1>Creative Digital<br/> Solutions</h1>
                     <p class="main-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
-                    <a class="btn-round" href="#">view portfolio</a>
+                    <a class="btn-round" href="#section-portfolio">view portfolio</a>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="section-services">
             <h2 class="sec-title">professional services</h2>
             <p class="section-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="services-content">
@@ -66,11 +79,11 @@
                         <li><i class="fas fa-check"></i>regular updates</li>
                         <li><i class="fas fa-check"></i>round the clock support</li>
                     </ul>
-                    <a href="#" class="btn-round">Learn more</a>
+                    <a href="#section-contact" class="btn-round">Learn more</a>
                 </div>
         </section>
         <!-- Section Projects -->
-        <section class="projects">
+        <section class="projects" id="section-portfolio">
                 <h2 class="sec-title">latest projects</h2>
                 <p class="section-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
                     <div class="projects-content">
@@ -132,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials">
+        <section class="testimonials" id="blog">
             <h2 class="sec-title">our awesome clients</h2>
             <p class="section-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="testimonials-wrapper">
@@ -152,7 +165,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="section-contact">
                 <h2 class="sec-title">ready to talk about your next project?</h2>
                 <a href="" class="btn-rect">contact us</a>
         </section>
@@ -237,5 +250,6 @@
             </div>
         </footer>
     </div>
+    <script src="script/navbar.js"></script>
 </body>
 </html>
