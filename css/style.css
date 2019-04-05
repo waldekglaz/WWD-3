@@ -696,6 +696,9 @@ footer a:hover{
     #chart-card::after{
         display: none;
     }
+    .testimonials-wrapper{
+        padding: 2rem 7rem 0;
+    }
 }
 @media(max-width:1360px){
     .header-content{
@@ -707,6 +710,41 @@ footer a:hover{
     .services, .culture{
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+}
+@media(max-width:1024px){
+    .testimonials-wrapper{
+        padding: 1rem 3rem 0;
+    }
+    .advert .col-1 {
+        display: none;
+    }
+    .projects img{
+        display: none;
+    }
+
+    .projects-content p{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .projects-content{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .projects h3{
+        text-align: center;
+    }
+    .box{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box-content{
+        text-align: center;
+    }
+    .box-content h4{
+        text-align: center;
     }
 }
 @media(max-width:976px){
@@ -725,6 +763,12 @@ footer a:hover{
         flex-direction: column;
         padding-left: 24px;
     }
+    .testimonials-wrapper img{
+        display: none;
+    }
+    .advert .col-2{
+        padding: 2rem 3.1rem 2.5rem;
+    }
     
 }
 @media(max-width:651px){
@@ -737,7 +781,12 @@ footer a:hover{
     .hero p{
         font-size: 0.875rem;
     }
-}
+    .advert .col-2 h2{
+            font-size: 1.5rem;
+            padding-right: 3rem;
+        }
+    }
+
 @media(max-width:463px){
     .sec-title{
         font-size: 1.5rem;
