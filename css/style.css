@@ -27,24 +27,7 @@ body{
 --------------------------- Flex
 
 ===================================================*/
-.flex{
-    display: flex;
-}
-.flex-just-cont-between{
-    justify-content: space-between;
-}
-.flex-just-space-around{
-    justify-content: space-around;
-}
-.align-items-center{
-    align-items: center;
-}
-.flex-column{
-    flex-direction: column;
-}
-.align-items-base{
-    align-items: baseline;
-}
+
 
 ul{
     list-style: none;
@@ -134,6 +117,9 @@ font-family: 'Roboto Slab', serif; */
 
 .header-content{
     padding: 2.6rem 14.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .branding img{
@@ -154,43 +140,8 @@ header li a:hover{
     color: #333;
     border-bottom:#7cc576 2px solid;
 }
-
-.side-nav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 1s;
-}
-.side-nav a{
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 22px;
-    display: block;
-    color: #222222;
-    font-weight: bold;
-    transition: 1s;
-}
-
-.side-nav a:hover{
-    color: #aaa;
-}
-
-.side-nav .btn-close{
-    position: absolute;
-    top: 5px;
-    right: 22px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.open-slide i{
-    font-size: 20px;
+.navbar-nav{
+    display: flex;
 }
 /*============
 
@@ -280,6 +231,9 @@ header li a:hover{
 .card-services{
     text-align: center;
     max-width: 17.12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .card-services i{
     font-size: 3.4rem;
@@ -301,7 +255,9 @@ header li a:hover{
 --------------------------- Section Advert
 
 ===================================================*/
-
+.advert{
+    display: flex;
+}
 .advert .col-1{
     max-width: 26.87rem;
     max-height: 38.5rem;
@@ -415,6 +371,10 @@ header li a:hover{
     text-align: left;
     max-width: 26.375rem;
 }
+.box{
+    display: flex;
+    align-items: center;
+}
 .box-content h4{
     color:  #222222;
     font-size: 18px;
@@ -438,6 +398,8 @@ header li a:hover{
 .culture-content{
     margin-top: 5.5rem;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .culture .card{
     text-align: center;
@@ -501,6 +463,8 @@ header li a:hover{
 }
 .testimonial{
     padding-bottom: 3.875rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .testimonials img{
@@ -559,6 +523,9 @@ header li a:hover{
 .partners{
     padding-left: 19.75rem;
     padding-right: 19.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #partners-img__1{
     max-width: 10.0625rem;
@@ -588,6 +555,8 @@ header li a:hover{
     padding-left: 14.375rem;
     padding-right: 14.375rem;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-nav h3{
@@ -616,12 +585,17 @@ header li a:hover{
     margin-left: 0;
     padding: 0;
 }
+.row{
+    display: flex;
+    align-items: baseline;
+}
 .row, .row a{
     font-family: 'Roboto Slab', serif;
     color:  #ececec;
    font-weight: 400;
    text-decoration: none;
 }
+
 .row address{
     font-style: normal;
     align-self: flex-start;
@@ -669,6 +643,8 @@ header li a:hover{
 ===================================================*/
 footer{
     padding:1.75rem 0 1.75rem;
+    display: flex;
+    align-items: center;
 }
 .footer-col-1{
     color:  #555555;
@@ -678,6 +654,9 @@ footer{
     text-align: left;
     padding-left: 14.375rem;
     margin-right: 7.4375rem;
+}
+.footer-col-2{
+    display: flex;
 }
 footer a{
     background-color: #222222;
@@ -740,6 +719,14 @@ footer a:hover{
         padding-bottom: 2rem;
     }
 }
+@media(max-width:724px){
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+    }
+    
+}
 @media(max-width:651px){
     .hero{
         padding: 3rem 1rem;
@@ -771,7 +758,7 @@ footer a:hover{
         display: none;
     }
     .advert .col-2{
-        padding: 0.2rem;
+        padding: 2rem 0.4rem;
         min-width: 300px;
     }
     .advert .col-2 h2{
@@ -780,28 +767,14 @@ footer a:hover{
         text-align: center;
     }
     .advert p{
-        padding: 1rem;
+        padding: 0.4rem;
         text-align: center;
     }
     .advert ul{
+        padding: 0.4rem;
+    }
+    .projects-content{
         padding: 1rem;
-    }
-}
-
-
-
-/* Mobile nav */
-@media(max-width:720px){
-    .navbar-nav{
-        display: none;
-    }
-    .header-content{
-        padding: 1rem 2.5rem 1rem 3.25rem;
-    }
-}
-
-@media(min-width:720px){
-    .open-slide{
-        display: none;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 }

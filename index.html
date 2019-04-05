@@ -12,15 +12,10 @@
 <body>
     <div class="body-wrapper">
         <header>
-            <div class="header-content flex flex-just-cont-between align-items-center">
+            <div class="header-content">
             <div class="branding"><a href="index.html"><img src="img/Logo.png" alt="Treehouse Logo"></a></div>
             <nav>
-                    <span class="open-slide">
-                            <a href="#" onclick="openSlideMenu()">
-                                    <i class="fas fa-bars"></i>
-                            </a>
-                        </span>
-                <ul class="flex navbar-nav">
+                <ul class="navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#section-services">About</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -28,16 +23,11 @@
                     <li><a href="#section-contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="side-nav" id="side-menu">
-                    <a class="btn-close" href="#" onclick="closeSlideMenu()">&times;</a>
-                    <a href="index.html">Home</a>
-                    <a href="#section-services">About</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#section-portfolio">Portfolio</a>
-                    <a href="#section-contact">Contact</a>
-                </div>
         </div>
         </header>
+        <!-- 
+            Section Hero
+                             -->
         <section class="hero">
                 <div class="hero-content">
                     <h1>Creative Digital<br/> Solutions</h1>
@@ -45,29 +35,32 @@
                     <a class="btn-round" href="#section-portfolio">view portfolio</a>
             </div>
         </section>
+        <!-- 
+            Section Services
+                             -->
         <section class="services" id="section-services">
             <h2 class="sec-title">professional services</h2>
             <p class="section-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="services-content">
-                <div class="card-services flex flex-column align-items-center">
+                <div class="card-services">
                     <i class="far fa-heart"></i>
                     <h3>Beautiful Designs</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, incidunt? Fugiat dolore perferendis aperiam, cum dolorum doloremque pariatur.</p>
 
                 </div>
-                <div class="card-services flex flex-column align-items-center">
+                <div class="card-services">
                     <i class="fas fa-mobile-alt"></i>
                     <h3>Responsive Web</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, incidunt? Fugiat dolore perferendis aperiam, cum dolorum doloremque pariatur.</p>
                 </div>
-                <div class="card-services flex flex-column align-items-center">
+                <div class="card-services">
                     <i class="fas fa-chart-line"></i>
                     <h3>Marketing Tools</h3>
                     <p>Lorem ipsum dolor sit amer, consectetur adipisicing elit. Dolorum, incidunt? Fugiat dolore perferendis aperiam, cum dolorum doloremque pariatur.</p>
                 </div>
             </div>
         </section>
-        <section class="advert flex">
+        <section class="advert">
                 <div class="col-1">
                     <img src="img/gear 2.png" alt="">
                 </div>
@@ -90,7 +83,7 @@
                         <h3>Developing a framework</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deserunt delectus omnis adipisci hic fugit nostrum reiciendis quia.</p>
                         <div class="projects-list">
-                            <div class="box flex align-items-center">
+                            <div class="box">
                                 <div class="box-icon" id="basket">
                                     <i class="fas fa-shopping-basket"></i>
                                 </div>
@@ -99,7 +92,7 @@
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="box flex align-items-center">
+                            <div class="box">
                                 <div class="box-icon" id="seo">
                                     <i class="fas fa-street-view"></i>
                                 </div>
@@ -108,7 +101,7 @@
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="box flex align-items-center">
+                            <div class="box">
                                 <div class="box-icon" id="lock">
                                     <i class="fas fa-lock"></i>
                                 </div>
@@ -127,7 +120,7 @@
         <section class="culture">
             <h2 class="sec-title">culture & values</h2>
             <p class="section-sub-title">Lorem ipsum dolor sit amet.</p>
-            <div class="culture-content flex flex-just-cont-between">
+            <div class="culture-content">
                 <div class="card">
                     <i id="balance" class="fas fa-music"></i>
                     <h3>work-life balance</h3>
@@ -149,14 +142,14 @@
             <h2 class="sec-title">our awesome clients</h2>
             <p class="section-sub-title">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="testimonials-wrapper">
-                <div class="testimonial testimonial-1 flex flex-just-cont-between">
+                <div class="testimonial testimonial-1">
                     <img src="img/male.jpeg" alt="Jamie Richardson">
                     <div class="testimonial-content">
                         <p class="quote">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto nesciunt perspiciatis repellat perferendis."</p>
                         <p class="client">- Jamie Richardson, Founder of Cocoa Media</p>
                     </div>
                 </div>
-                <div class="testimonial testimonial-2 flex flex-just-cont-between">
+                <div class="testimonial testimonial-2">
                     <img src="img/pexels-photo-355164.jpeg" alt="Kim Thompson">
                     <div class="testimonial-content">
                         <p class="quote">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iusto nesciunt perspiciatis repellat perferendis."</p>
@@ -169,16 +162,16 @@
                 <h2 class="sec-title">ready to talk about your next project?</h2>
                 <a href="" class="btn-rect">contact us</a>
         </section>
-        <section class="partners flex flex-just-cont-between align-items-center">
+        <section class="partners">
             <img id="partners-img__1" src="img/Envato.png" alt="Envato">
             <img id="partners-img__2" src="img/WordPress.png" alt="WordPress">
             <img id="partners-img__3" src="img/Tuts+.png" alt="aeTus+">
             <img id="partners-img__4" src="img/Microlancer copy.png" alt="Microlancer">
         </section>
-        <section class="footer-nav flex flex-just-cont-between">
+        <section class="footer-nav">
             <div class="column contact-us">
                 <h3>contact us</h3>
-                <div class="row flex align-items-base">
+                <div class="row address">
                     <i class="fas fa-map-marker-alt"></i>
                     <address>
                     55 Main St.<br/>
@@ -186,26 +179,26 @@
                     M1H 3A5<br/>
                     </address>
                 </div>
-                <div class="row flex align-items-center">
+                <div class="row">
                     <i class="fas fa-mobile-alt"></i>
                     <p>(416)555-5252</p>
                 </div>
-                <div class="row flex align-items-center">
+                <div class="row">
                         <i class="fas fa-envelope"></i>
                     <p>hello@treehouse.com</p>
                 </div>
             </div>
             <div class="column latest-posts">
                 <h3>Latest posts</h3>
-                <div class="row flex">
+                <div class="row">
                     <i class="far fa-id-card"></i>
                     <a href="">Made with love in toronto</a>
                 </div>
-                <div class="row flex">
+                <div class="row">
                     <i class="far fa-image"></i>
                     <a href="">Startup News & Emerging Tech</a>
                 </div>
-                <div class="row flex">
+                <div class="row">
                     <i class="far fa-id-card"></i>
                     <a href="">Bitcoin Will Soon Rule The World</a>
                 </div>
