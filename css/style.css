@@ -699,6 +699,10 @@ footer a:hover{
     .testimonials-wrapper{
         padding: 2rem 7rem 0;
     }
+    .partners{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
 }
 @media(max-width:1360px){
     .header-content{
@@ -746,6 +750,10 @@ footer a:hover{
     .box-content h4{
         text-align: center;
     }
+    .partners{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 @media(max-width:976px){
     .services-content,
@@ -768,6 +776,9 @@ footer a:hover{
     }
     .advert .col-2{
         padding: 2rem 3.1rem 2.5rem;
+    }
+    .partners{
+        display: none;
     }
     
 }
@@ -826,4 +837,22 @@ footer a:hover{
         padding: 1rem;
         background-color: rgba(255, 255, 255, 0.8);
     }
+}
+
+@media(max-width: 360px){
+    .header-content{
+        padding: 18px 8px;
+    }
+    header li a{
+        padding: 8px;
+        
+        font-size: 12px;
+        font-weight: 400;
+        
+        }
+        .navbar-nav{
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
 }
